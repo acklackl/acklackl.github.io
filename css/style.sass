@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon|Open+Sans|VT323|Raleway|Raleway+Dots|Roboto:100')
+@import "toastgrid"
+
+html
+  body
+    margin: 0
+    height: 2000px
+    overflow-x: hidden
+    //font:
+      family: "Open Sans"
+    width: auto
+
+    h1
+      margin: 0
+      font:
+        family: "Raleway Dots", serif
+        size: 40px
+      color: cadetblue
+
+    h1.section
+      color: white
+
+    h3
+      margin: 0
+      font:
+        family: VT323
+        size: 30px
+      color: black
+
+    h4
+      margin: 0
+      font:
+        family: "Coming Soon"
+        size: 25px
+      color: black
+
+    section
+      margin-bottom: 70px
+
+    p
+      font:
+        family: "Roboto", sans-serif
+        size: 20px
+
+    header
+
+      .background
+        position: relative
+        height: 500px
+        filter: brightness(3)
+        background:
+          image: url(../assets/Night.jpg)
+          repeat: repeat-x
+          size: cover
+          position: 0 65%
+          attachment: fixed
+
+      .MainTitle
+        text-align: center
+        vertical-align: middle
+        line-height: 150px
+        font:
+          size: 100px
+          family: "Open Sans", sans-serif
+        color: wheat
+        height: 150px
+        width: 100%
+        position: absolute
+        top: 150px
+        //border:
+          color: whitesmoke
+          style: dashed
+
+      nav
+        position: absolute
+        top: 300px
+        height: 50px
+        width: 100%
+        //border:
+          color: whitesmoke
+          style: dashed
+        color: white
+        text-align: center
+        vertical-align: middle
+        line-height: 50px
+        font:
+          family: "Raleway", sans-serif
+          size: 20px
+
+        a
+          text-decoration: none
+          color: white
+
+        a:hover
+          text-shadow: 2px 2px 15px rgb(159, 149, 233)
+          color: #9057ff
+
+
+    section.bio
+      position: relative
+      //border:
+        color: crimson
+        style: dashed
+        height: auto
+      box-sizing: border-box
+      padding: 100px
+
+      .bio-title
+        //border:
+          color: darkslategray
+          style: dashed
+        background:
+          color: antiquewhite
+        height: auto
+        text-align: center
+        position: relative
+
+      .bio-content
+        //border:
+          color: darkslategray
+          style: dashed
+        height: auto
+
+      .bio-pic
+        border:
+          color: darkslategray
+          style: dashed
+        height: 182px
+
+  .git, .music
+    position: relative
+    //border:
+      color: crimson
+      style: dashed
+    height: auto
+    box-sizing: border-box
+    padding: 50px
+
+    .music-content-title
+      border:
+        color: darkslategray
+        style: dashed
+      margin-bottom: 30px
+      text-align: center
+
+    .music-content
+      height: auto
+      //border:
+        color: darkslategray
+        style: dashed
+
+    .music-logo
+      height: 300px
+      background:
+        image: url("../assets/music.svg")
+        repeat: no-repeat
+        position: center
+
+    .git-logo
+      //border:
+        color: darkslategray
+        style: dashed
+      height: 300px
+      //width: auto
+      background:
+        image: url("../assets/githubMark.svg")
+        repeat: no-repeat
+        position: center
+
+    .git-section
+      //border-top:
+        color: gold
+        style: solid
+      //border:
+        color: darkslategray
+        style: dashed
+      border-bottom:
+        color: gold
+        style: solid
+      height: auto
+
+      .git-section-title
+        text-align: center
+        border:
+          color: crimson
+          style: dashed
+
+      .banknote
+        background:
+          image: url(../assets/banknote.svg)
+          repeat: no-repeat
+          position: center
+        height: 115px
+        margin-top: 20px
+
+      .backpack
+        margin-top: 20px
+        height: 115px
+        //border-bottom:
+          color: black
+          style: groove
+        background:
+          image: url("../assets/world.svg")
+          repeat: no-repeat
+          position: center
+
+      .display
+        height: 115px
+        //border:
+          color: darkslategray
+          style: dashed
+        margin-top: 20px
+        background:
+          image: url("../assets/display.svg")
+          repeat: no-repeat
+          position: center
+
+    .git-title, .music-title
+      //border:
+        color: darkslategray
+        style: dashed
+      height: auto
+      width: auto
+      padding: 10px
+      position: absolute
+      top: -50px
+
+    .git-title
+      background-color: lightslategrey
+
+    .music-title
+      background-color: darkslategray
+
+  .git
+    background-color: wheat
+
+  .music
+    background-color: lightblue
+
+  footer
+    background:
+      color: crimson
+    height: 300px
+    //border:
+      color: crimson
+      style: dashed
+
+

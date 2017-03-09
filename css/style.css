@@ -341,11 +341,11 @@ html body {
   html body header .background {
     position: relative;
     height: 500px;
-    filter: brightness(3);
-    background-image: url(../assets/Night.jpg);
+    filter: blur(3px);
+    background-image: url(../assets/Night2.jpg);
     background-repeat: repeat-x;
     background-size: cover;
-    background-position: 0 65%;
+    background-position: 0 100%;
     background-attachment: fixed; }
   html body header .MainTitle {
     text-align: center;
@@ -451,9 +451,12 @@ html .git, html .music {
 html .git {
   background-color: wheat; }
 html .music {
-  background-color: lightblue; }
+  background-color: steelblue; }
 html footer {
-  background-color: crimson;
+  background-color: darkslategray;
   height: 300px; }
+@media (max-width: 700px) {
+  html .music-logo {
+    visibility: hidden; } }
 
 /*# sourceMappingURL=style.css.map */

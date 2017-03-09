@@ -1,17 +1,12 @@
 window.sr = ScrollReveal();
 
-sr.reveal(".MainTitle", { duration: 1000,
-    easing: "cubic-bezier(0.17, 0.67, 0.87, 0.39)",
-    origin: "top",
-    mobile: false
-});
 
-sr.reveal("nav span", { duration: 500,
-    delay: 1000,
-    origin: "top",
-    mobile: false
-}, 80);
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
+function remove(id) {
+    var elem = document.getElementById(id);
+    return elem.parentNode.removeChild(elem);
+}
 
 sr.reveal(".bio-title", {
     origin: "left",
@@ -46,10 +41,28 @@ sr.reveal(".git-logo", {
     mobile: false
 });
 
-sr.reveal(".music-logo", {
-    duration: 1500,
-    mobile: false
-});
+if (width > 700) {
+    sr.reveal(".music-logo", {
+        duration: 1500,
+        mobile: false
+    });
+
+    sr.reveal(".MainTitle", { duration: 1000,
+        easing: "cubic-bezier(0.17, 0.67, 0.87, 0.39)",
+        origin: "top",
+        mobile: false
+    });
+
+    sr.reveal("nav span", { duration: 500,
+        delay: 1000,
+        origin: "top",
+        mobile: false
+    }, 80);
+}
+
+else {
+    remove("music-logo");
+}
 
 sr.reveal(".git-section p", {
     origin: "left",

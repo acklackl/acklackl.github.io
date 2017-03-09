@@ -313,7 +313,7 @@
 
 html body {
   margin: 0;
-  height: 2000px;
+  height: auto;
   overflow-x: hidden;
   width: auto; }
   html body h1 {

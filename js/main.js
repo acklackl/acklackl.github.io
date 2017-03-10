@@ -4,19 +4,39 @@ window.sr = ScrollReveal();
 let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
 //function to remove an element
-let remove = (id) => {
+let hide = (id) => {
     let elem = document.getElementById(id);
-    return elem.parentNode.removeChild(elem);
+    elem.style.display = "none";
+};
+
+let show = (id) => {
+    let elem = document.getElementById(id);
+    elem.style.display = "block";
 };
 
 //function that reveals music logo, main title, and nav if width is greater than 700. else, music logo is removed
 //and visibility for MainTitle and nav span are set to hidden
 let reveal = () => {
-    if (width > 700) {
-        sr.reveal(".music-logo", {
-            duration: 1500,
-            mobile: false
-        });
+
+    let music = () => {
+        if (width > 700) {
+            show("music-logo");
+            sr.reveal(".music-logo", {
+                duration: 1500,
+                mobile: false
+            });
+        }
+        else {
+            hide("music-logo");
+        }
+    };
+
+    music();
+
+    if (width > 800) {
+
+        show("mainTitle");
+        show("nav");
 
         sr.reveal(".MainTitle", {
             duration: 1000,
@@ -34,9 +54,8 @@ let reveal = () => {
     }
 
     else {
-        remove("music-logo");
-        //doesn't work
-        //document.getElementsByClassName("MainTitle").style.visibility = "hidden";
+        hide("mainTitle");
+        hide("nav");
     }
 };
 

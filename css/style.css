@@ -314,8 +314,7 @@
 html body {
   margin: 0;
   height: auto;
-  overflow-x: hidden;
-  width: auto; }
+  overflow-x: hidden; }
   html body h1 {
     margin: 0;
     font-family: "Raleway Dots", serif;
@@ -457,6 +456,6 @@ html footer {
   height: 300px; }
 @media (max-width: 700px) {
   html .music-logo {
-    visibility: hidden; } }
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

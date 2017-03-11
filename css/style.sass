@@ -2,6 +2,7 @@
 @import "toastgrid"
 
 html
+  font-size: 16px
 
   body
     margin: 0
@@ -15,7 +16,7 @@ html
       margin: 0
       font:
         family: "Raleway Dots", serif
-        size: 40px
+        size: 2.5rem
       color: cadetblue
 
     h1.section
@@ -25,57 +26,56 @@ html
       margin: 0
       font:
         family: VT323
-        size: 30px
+        size: 1.875rem
       color: black
 
     h4
       margin: 0
       font:
         family: "Coming Soon"
-        size: 25px
+        size: 1.563rem
       color: black
 
     section
-      margin-bottom: 70px
+      margin-bottom: 4.375rem
 
     p
       font:
         family: "Roboto", sans-serif
-        size: 20px
+        size: 1.250rem
 
     header
 
       .background
         position: relative
-        height: 500px
+        //height: 31.250rem
         filter: brightness(1) blur(3px)
         background:
           image: url(../assets/Night3.jpg)
           repeat: repeat-x
           size: cover
           position: 0 100%
-          attachment: fixed
 
       .MainTitle
         text-align: center
         vertical-align: middle
-        line-height: 150px
+        line-height: 9.375rem
         font:
-          size: 100px
+          size: 6.250rem
           family: "Open Sans", sans-serif
         color: wheat
-        height: 150px
+        height: 9.375rem
         width: 100%
         position: absolute
-        top: 150px
+        top: 9.375rem
         //border:
           color: whitesmoke
           style: dashed
 
       nav
         position: absolute
-        top: 300px
-        height: 50px
+        top: 18.750rem
+        height: 3.125rem
         width: 100%
         //border:
           color: whitesmoke
@@ -83,17 +83,17 @@ html
         color: white
         text-align: center
         vertical-align: middle
-        line-height: 50px
+        line-height: 3.125rem
         font:
           family: "Raleway", sans-serif
-          size: 20px
+          size: 1.250rem
 
         a
           text-decoration: none
           color: white
 
         a:hover
-          text-shadow: 2px 2px 15px rgb(159, 149, 233)
+          text-shadow: 0.125rem 0.125rem 0.938rem rgb(159, 149, 233)
           color: #9057ff
 
 
@@ -104,7 +104,7 @@ html
         style: dashed
         height: auto
       box-sizing: border-box
-      padding: 100px
+      //padding: 6.250rem
 
       .bio-title
         //border:
@@ -126,7 +126,7 @@ html
         border:
           color: darkslategray
           style: dashed
-        height: 182px
+        height: 11.375rem
 
   .git, .music
     position: relative
@@ -135,13 +135,13 @@ html
       style: dashed
     height: auto
     box-sizing: border-box
-    padding: 50px
+    //padding: 3.125rem
 
     .music-content-title
       border:
         color: darkslategray
         style: dashed
-      margin-bottom: 30px
+      margin-bottom: 1.875rem
       text-align: center
 
     .music-content
@@ -151,7 +151,7 @@ html
         style: dashed
 
     .music-logo
-      height: 300px
+      height: 18.75rem
       background:
         image: url("../assets/music.svg")
         repeat: no-repeat
@@ -161,7 +161,7 @@ html
       //border:
         color: darkslategray
         style: dashed
-      height: 300px
+      height: 18.75rem
       //width: auto
       background:
         image: url("../assets/githubMark.svg")
@@ -191,12 +191,12 @@ html
           image: url(../assets/banknote.svg)
           repeat: no-repeat
           position: center
-        height: 115px
-        margin-top: 20px
+        height: 7.188rem
+        margin-top: 1.250rem
 
       .backpack
-        margin-top: 20px
-        height: 115px
+        margin-top: 1.250rem
+        height: 7.188rem
         //border-bottom:
           color: black
           style: groove
@@ -206,11 +206,11 @@ html
           position: center
 
       .display
-        height: 115px
+        height: 7.188rem
         //border:
           color: darkslategray
           style: dashed
-        margin-top: 20px
+        margin-top: 1.250rem
         background:
           image: url("../assets/display.svg")
           repeat: no-repeat
@@ -222,9 +222,9 @@ html
         style: dashed
       height: auto
       width: auto
-      padding: 10px
+      padding: 0.325rem
       position: absolute
-      top: -50px
+      top: -3.125rem
 
     .git-title
       background-color: lightslategrey
@@ -241,14 +241,51 @@ html
   footer
     background:
       color: coral
-    height: 300px
+    height: 18.750rem
     //border:
       color: crimson
       style: dashed
 
-  @media (max-width: 700px)
-    .music-logo
-      display: none
+@media (min-width: 700px)
+  .background
+    background:
+      attachment: fixed
+    height: 31.250rem
 
+  .git, .music
+    padding: 3.125rem
+
+  .bio
+    padding: 6.250rem
+
+@media (max-width: 700px)
+  html
+    font-size: 15px
+
+  .git, .music, .bio
+    padding: 2.5rem
+
+  .background
+    height: 15rem
+
+@media (max-width: 500px)
+  html
+    font-size: 13px
+
+    .git, .music, .bio
+      padding: 1.5rem
+
+      .banknote, .backpack, .display
+        display: none
+
+    .background
+      height: 10rem
+
+@media (max-width: 300px)
+  html
+    font-size: 10px
+
+    .git, .music, .bio
+      padding: 1rem
 
 

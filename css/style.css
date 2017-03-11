@@ -311,151 +311,180 @@
 .col--am {
   vertical-align: middle; }
 
-html body {
-  margin: 0;
-  height: auto;
-  overflow-x: hidden; }
-  html body h1 {
+html {
+  font-size: 16px; }
+  html body {
     margin: 0;
-    font-family: "Raleway Dots", serif;
-    font-size: 40px;
-    color: cadetblue; }
-  html body h1.section {
-    color: white; }
-  html body h3 {
-    margin: 0;
-    font-family: VT323;
-    font-size: 30px;
-    color: black; }
-  html body h4 {
-    margin: 0;
-    font-family: "Coming Soon";
-    font-size: 25px;
-    color: black; }
-  html body section {
-    margin-bottom: 70px; }
-  html body p {
-    font-family: "Roboto", sans-serif;
-    font-size: 20px; }
-  html body header .background {
-    position: relative;
-    height: 500px;
-    filter: brightness(1) blur(3px);
-    background-image: url(../assets/Night3.jpg);
-    background-repeat: repeat-x;
-    background-size: cover;
-    background-position: 0 100%;
-    background-attachment: fixed; }
-  html body header .MainTitle {
-    text-align: center;
-    vertical-align: middle;
-    line-height: 150px;
-    font-size: 100px;
-    font-family: "Open Sans", sans-serif;
-    color: wheat;
-    height: 150px;
-    width: 100%;
-    position: absolute;
-    top: 150px; }
-  html body header nav {
-    position: absolute;
-    top: 300px;
-    height: 50px;
-    width: 100%;
-    color: white;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 50px;
-    font-family: "Raleway", sans-serif;
-    font-size: 20px; }
-    html body header nav a {
-      text-decoration: none;
+    height: auto;
+    overflow-x: hidden; }
+    html body h1 {
+      margin: 0;
+      font-family: "Raleway Dots", serif;
+      font-size: 2.5rem;
+      color: cadetblue; }
+    html body h1.section {
       color: white; }
-    html body header nav a:hover {
-      text-shadow: 2px 2px 15px #9f95e9;
-      color: #9057ff; }
-  html body section.bio {
-    position: relative;
-    box-sizing: border-box;
-    padding: 100px; }
-    html body section.bio .bio-title {
-      background-color: antiquewhite;
-      height: auto;
+    html body h3 {
+      margin: 0;
+      font-family: VT323;
+      font-size: 1.875rem;
+      color: black; }
+    html body h4 {
+      margin: 0;
+      font-family: "Coming Soon";
+      font-size: 1.563rem;
+      color: black; }
+    html body section {
+      margin-bottom: 4.375rem; }
+    html body p {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.25rem; }
+    html body header .background {
+      position: relative;
+      filter: brightness(1) blur(3px);
+      background-image: url(../assets/Night3.jpg);
+      background-repeat: repeat-x;
+      background-size: cover;
+      background-position: 0 100%; }
+    html body header .MainTitle {
       text-align: center;
-      position: relative; }
-    html body section.bio .bio-content {
-      height: auto; }
-    html body section.bio .bio-pic {
+      vertical-align: middle;
+      line-height: 9.375rem;
+      font-size: 6.25rem;
+      font-family: "Open Sans", sans-serif;
+      color: wheat;
+      height: 9.375rem;
+      width: 100%;
+      position: absolute;
+      top: 9.375rem; }
+    html body header nav {
+      position: absolute;
+      top: 18.75rem;
+      height: 3.125rem;
+      width: 100%;
+      color: white;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 3.125rem;
+      font-family: "Raleway", sans-serif;
+      font-size: 1.25rem; }
+      html body header nav a {
+        text-decoration: none;
+        color: white; }
+      html body header nav a:hover {
+        text-shadow: 0.125rem 0.125rem 0.938rem #9f95e9;
+        color: #9057ff; }
+    html body section.bio {
+      position: relative;
+      box-sizing: border-box; }
+      html body section.bio .bio-title {
+        background-color: antiquewhite;
+        height: auto;
+        text-align: center;
+        position: relative; }
+      html body section.bio .bio-content {
+        height: auto; }
+      html body section.bio .bio-pic {
+        border-color: darkslategray;
+        border-style: dashed;
+        height: 11.375rem; }
+  html .git, html .music {
+    position: relative;
+    height: auto;
+    box-sizing: border-box; }
+    html .git .music-content-title, html .music .music-content-title {
       border-color: darkslategray;
       border-style: dashed;
-      height: 182px; }
-html .git, html .music {
-  position: relative;
-  height: auto;
-  box-sizing: border-box;
-  padding: 50px; }
-  html .git .music-content-title, html .music .music-content-title {
-    border-color: darkslategray;
-    border-style: dashed;
-    margin-bottom: 30px;
-    text-align: center; }
-  html .git .music-content, html .music .music-content {
-    height: auto; }
-  html .git .music-logo, html .music .music-logo {
-    height: 300px;
-    background-image: url("../assets/music.svg");
-    background-repeat: no-repeat;
-    background-position: center; }
-  html .git .git-logo, html .music .git-logo {
-    height: 300px;
-    background-image: url("../assets/githubMark.svg");
-    background-repeat: no-repeat;
-    background-position: center; }
-  html .git .git-section, html .music .git-section {
-    border-bottom-color: gold;
-    border-bottom-style: solid;
-    height: auto; }
-    html .git .git-section .git-section-title, html .music .git-section .git-section-title {
-      text-align: center;
-      border-color: crimson;
-      border-style: dashed; }
-    html .git .git-section .banknote, html .music .git-section .banknote {
-      background-image: url(../assets/banknote.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 115px;
-      margin-top: 20px; }
-    html .git .git-section .backpack, html .music .git-section .backpack {
-      margin-top: 20px;
-      height: 115px;
-      background-image: url("../assets/world.svg");
+      margin-bottom: 1.875rem;
+      text-align: center; }
+    html .git .music-content, html .music .music-content {
+      height: auto; }
+    html .git .music-logo, html .music .music-logo {
+      height: 18.75rem;
+      background-image: url("../assets/music.svg");
       background-repeat: no-repeat;
       background-position: center; }
-    html .git .git-section .display, html .music .git-section .display {
-      height: 115px;
-      margin-top: 20px;
-      background-image: url("../assets/display.svg");
+    html .git .git-logo, html .music .git-logo {
+      height: 18.75rem;
+      background-image: url("../assets/githubMark.svg");
       background-repeat: no-repeat;
       background-position: center; }
-  html .git .git-title, html .git .music-title, html .music .git-title, html .music .music-title {
-    height: auto;
-    width: auto;
-    padding: 10px;
-    position: absolute;
-    top: -50px; }
-  html .git .git-title, html .music .git-title {
-    background-color: lightslategrey; }
-  html .git .music-title, html .music .music-title {
-    background-color: darkslategray; }
-html .git {
-  background-color: wheat; }
-html .music {
-  background-color: aliceblue; }
-html footer {
-  background-color: coral;
-  height: 300px; }
+    html .git .git-section, html .music .git-section {
+      border-bottom-color: gold;
+      border-bottom-style: solid;
+      height: auto; }
+      html .git .git-section .git-section-title, html .music .git-section .git-section-title {
+        text-align: center;
+        border-color: crimson;
+        border-style: dashed; }
+      html .git .git-section .banknote, html .music .git-section .banknote {
+        background-image: url(../assets/banknote.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 7.188rem;
+        margin-top: 1.25rem; }
+      html .git .git-section .backpack, html .music .git-section .backpack {
+        margin-top: 1.25rem;
+        height: 7.188rem;
+        background-image: url("../assets/world.svg");
+        background-repeat: no-repeat;
+        background-position: center; }
+      html .git .git-section .display, html .music .git-section .display {
+        height: 7.188rem;
+        margin-top: 1.25rem;
+        background-image: url("../assets/display.svg");
+        background-repeat: no-repeat;
+        background-position: center; }
+    html .git .git-title, html .git .music-title, html .music .git-title, html .music .music-title {
+      height: auto;
+      width: auto;
+      padding: 0.325rem;
+      position: absolute;
+      top: -3.125rem; }
+    html .git .git-title, html .music .git-title {
+      background-color: lightslategrey; }
+    html .git .music-title, html .music .music-title {
+      background-color: darkslategray; }
+  html .git {
+    background-color: wheat; }
+  html .music {
+    background-color: aliceblue; }
+  html footer {
+    background-color: coral;
+    height: 18.75rem; }
+
+@media (min-width: 700px) {
+  .background {
+    background-attachment: fixed;
+    height: 31.25rem; }
+
+  .git, .music {
+    padding: 3.125rem; }
+
+  .bio {
+    padding: 6.25rem; } }
 @media (max-width: 700px) {
-  html .music-logo {
-    display: none; } }
+  html {
+    font-size: 15px; }
+
+  .git, .music, .bio {
+    padding: 2.5rem; }
+
+  .background {
+    height: 15rem; } }
+@media (max-width: 500px) {
+  html {
+    font-size: 13px; }
+    html .git, html .music, html .bio {
+      padding: 1.5rem; }
+      html .git .banknote, html .git .backpack, html .git .display, html .music .banknote, html .music .backpack, html .music .display, html .bio .banknote, html .bio .backpack, html .bio .display {
+        display: none; }
+    html .background {
+      height: 10rem; } }
+@media (max-width: 300px) {
+  html {
+    font-size: 10px; }
+    html .git, html .music, html .bio {
+      padding: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */

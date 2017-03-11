@@ -33,30 +33,34 @@ let reveal = () => {
 
     music();
 
-    if (width > 800) {
+    let top = () => {
+        if (width > 800) {
 
-        show("mainTitle");
-        show("nav");
+            show("mainTitle");
+            show("nav");
 
-        sr.reveal(".MainTitle", {
-            duration: 1000,
-            easing: "cubic-bezier(0.17, 0.67, 0.87, 0.39)",
-            origin: "top",
-            mobile: false
-        });
+            sr.reveal(".MainTitle", {
+                duration: 1000,
+                easing: "cubic-bezier(0.17, 0.67, 0.87, 0.39)",
+                origin: "top",
+                mobile: false
+            });
 
-        sr.reveal("nav span", {
-            duration: 500,
-            delay: 1000,
-            origin: "top",
-            mobile: false
-        }, 80);
-    }
+            sr.reveal("nav span", {
+                duration: 500,
+                delay: 1000,
+                origin: "top",
+                mobile: false
+            }, 80);
+        }
 
-    else {
-        hide("mainTitle");
-        hide("nav");
-    }
+        else {
+            hide("mainTitle");
+            hide("nav");
+        }
+    };
+
+    top();
 };
 
 window.addEventListener('resize', event => {

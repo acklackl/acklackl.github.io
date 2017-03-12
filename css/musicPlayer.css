@@ -1,0 +1,74 @@
+@font-face {
+  src: url("../assets/heydings_controls.ttf") format("truetype");
+  font-family: "controls"; }
+#musicPlayer {
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  -moz-user-select: none; }
+  #musicPlayer .button:hover {
+    background-color: #b5ffe5;
+    color: #1c3796; }
+  #musicPlayer span {
+    user-select: none;
+    -moz-user-select: none; }
+  #musicPlayer .point {
+    cursor: pointer; }
+  #musicPlayer #music-flex-wrap {
+    height: 3.125rem;
+    width: 100%;
+    background-color: #284dd4;
+    font-family: "controls";
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    user-select: none;
+    border-color: black;
+    border-style: solid;
+    border-radius: 0.3rem;
+    border-width: 0.031rem; }
+    #musicPlayer #music-flex-wrap .controlsWrap {
+      border: white;
+      width: 15%;
+      display: flex;
+      justify-content: space-between; }
+    #musicPlayer #music-flex-wrap .progressionWrap {
+      border: white;
+      width: 60%;
+      font-family: "Coming Soon";
+      display: flex;
+      justify-content: space-between;
+      cursor: default; }
+      #musicPlayer #music-flex-wrap .progressionWrap #progressBar {
+        border-style: solid;
+        border-color: black;
+        border-width: 0.001rem;
+        border-radius: 2rem;
+        height: 50%;
+        width: 25rem;
+        margin-top: 0.5rem;
+        background-color: #1c3796; }
+        #musicPlayer #music-flex-wrap .progressionWrap #progressBar #progressButton {
+          width: 50%;
+          height: 100%; }
+    #musicPlayer #music-flex-wrap .playlistWrap {
+      border: white;
+      width: 5%;
+      display: flex; }
+  #musicPlayer #playlist {
+    height: auto;
+    border: 1px solid #b5ffe5;
+    background-color: #1c3796;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem; }
+    #musicPlayer #playlist .song {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.2rem;
+      color: white; }
+
+/*# sourceMappingURL=musicPlayer.css.map */

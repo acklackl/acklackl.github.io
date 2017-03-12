@@ -1,0 +1,99 @@
+@font-face
+  src: url("../assets/heydings_controls.ttf") format("truetype")
+  font-family: "controls"
+
+#musicPlayer
+  display: flex
+  flex-direction: column
+  user-select: none
+  -moz-user-select: none
+
+  .button:hover
+    background-color: #b5ffe5
+    color: #1c3796
+
+  span
+    user-select: none
+    -moz-user-select: none
+
+  .point
+    cursor: pointer
+
+  #music-flex-wrap
+    height: 3.125rem
+    width: 100%
+    background:
+      color: #284dd4
+    font:
+      family: "controls"
+      size: 2rem
+    color: white
+    display: flex
+    justify-content: space-around
+    user-select: none
+    border:
+      color: black
+      style: solid
+      radius: 0.3rem
+      width: 0.031rem
+
+    .controlsWrap
+      border: white
+      width: 15%
+      display: flex
+      justify-content: space-between
+
+    .progressionWrap
+      border: white
+      width: 60%
+      font:
+        family: "Coming Soon"
+      display: flex
+      justify-content: space-between
+      cursor: default
+
+      #progressBar
+        border:
+          style: solid
+          color: black
+          width: 0.001rem
+          radius: 2rem
+        height: 50%
+        width: 25rem
+        margin-top: 0.5rem
+        background:
+          color: #1c3796
+
+        #progressButton
+          //background-color: #c00
+          width: 50%
+          height: 100%
+
+    .playlistWrap
+      border: white
+      width: 5%
+      display: flex
+
+  #playlist
+    height: auto
+    border: 1px solid #b5ffe5
+    //overflow-y: scroll
+    background-color: #1c3796
+    display: flex
+    flex-direction: column
+    padding: 0 1rem
+
+    .song
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      font:
+        family: "Roboto", sans-serif
+        size: 1.2rem
+      color: white
+
+
+
+
+
+

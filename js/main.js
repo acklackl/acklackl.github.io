@@ -63,7 +63,7 @@ let reveal = () => {
     top();
 };
 
-window.addEventListener('resize', event => {
+window.addEventListener('resize', () => {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     reveal();
 });
@@ -123,7 +123,7 @@ sr.reveal(".music-content-title", {
     mobile: false
 });
 
-sr.reveal("iframe", {
+/*sr.reveal("iframe", {
     duration: 1500,
     mobile: false
-}, 150);
+}, 150);*/
